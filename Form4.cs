@@ -25,7 +25,7 @@ namespace DriverCatapult
             f5.Left = this.Left;
             f5.Top = this.Top;
             f5.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace DriverCatapult
             f1.Left = this.Left;
             f1.Top = this.Top;
             f1.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

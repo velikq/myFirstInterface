@@ -20,6 +20,14 @@ namespace DriverCatapult
         private void Form1_Load(object sender, EventArgs e)
         {
             this.label2.Text = Properties.Settings.Default.scanDate;
+            if(this.label2.Text == "никогда")
+            {
+                this.label2.ForeColor = Color.FromName("Red");
+            }
+            else
+            {
+                this.label2.ForeColor = Color.FromName("Green");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)

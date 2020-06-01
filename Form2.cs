@@ -26,17 +26,14 @@ namespace DriverCatapult
             f1.Left = this.Left;
             f1.Top = this.Top;
             f1.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
             Properties.Settings.Default.scanDate = "сегодня";
             Properties.Settings.Default.Save();
 
-
-            Console.WriteLine("успех");
             if(Properties.Settings.Default.createRestorePoint == true)
             {
                 StringCollection sc = new StringCollection();
@@ -55,7 +52,7 @@ namespace DriverCatapult
             f3.Left = this.Left;
             f3.Top = this.Top;
             f3.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -87,7 +84,7 @@ namespace DriverCatapult
             f4.Left = this.Left;
             f4.Top = this.Top;
             f4.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -97,7 +94,7 @@ namespace DriverCatapult
             f5.Left = this.Left;
             f5.Top = this.Top;
             f5.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)

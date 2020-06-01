@@ -38,7 +38,7 @@ namespace DriverCatapult
             f1.Left = this.Left;
             f1.Top = this.Top;
             f1.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace DriverCatapult
             f4.Left = this.Left;
             f4.Top = this.Top;
             f4.Size = this.Size;
-            this.Close();
+            this.Hide();
         }
 
         private void Form5_Load(object sender, EventArgs e)
