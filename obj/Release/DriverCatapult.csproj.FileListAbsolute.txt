@@ -11,3 +11,4 @@ C:\Users\nublet\source\repos\DriverCatapult\obj\Release\DriverCatapult.csproj.Ge
 C:\Users\nublet\source\repos\DriverCatapult\obj\Release\DriverCatapult.csproj.CoreCompileInputs.cache
 C:\Users\nublet\source\repos\DriverCatapult\obj\Release\DriverCatapult.exe
 C:\Users\nublet\source\repos\DriverCatapult\obj\Release\DriverCatapult.pdb
+C:\Users\nublet\source\repos\DriverCatapult\obj\Release\DriverCatapult.csprojAssemblyReference.cache

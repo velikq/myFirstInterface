@@ -67,10 +67,21 @@ namespace DriverCatapult
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.comboBox1.Items.Clear();
-            this.comboBox1.Text = "";
-            Properties.Settings.Default.restorePoints.Clear();
-            Properties.Settings.Default.Save();
+            DialogResult result = MessageBox.Show(
+                "Вы точно хотите удалить все точки восстановления?",
+                "Предупрежение",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button2,
+                MessageBoxOptions.DefaultDesktopOnly);
+            this.TopMost = true;
+            if (Properties.Settings.Default.restorePoints != null && result == DialogResult.Yes)
+            {
+                this.comboBox1.Items.Clear();
+                this.comboBox1.Text = "";
+                Properties.Settings.Default.restorePoints.Clear();
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void Form5_FormClosed(object sender, FormClosedEventArgs e)
