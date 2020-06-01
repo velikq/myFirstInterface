@@ -53,11 +53,14 @@ namespace DriverCatapult
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            string[] restPoints = new string[Properties.Settings.Default.restorePoints.Count];
-            Properties.Settings.Default.restorePoints.CopyTo(restPoints, 0);
-            foreach (string restPoint in restPoints)
+            if(Properties.Settings.Default.restorePoints != null)
             {
-                this.comboBox1.Items.Add(restPoint);
+                string[] restPoints = new string[Properties.Settings.Default.restorePoints.Count];
+                Properties.Settings.Default.restorePoints.CopyTo(restPoints, 0);
+                foreach (string restPoint in restPoints)
+                {
+                    this.comboBox1.Items.Add(restPoint);
+                }
             }
             this.label2.Hide();
         }
@@ -65,8 +68,14 @@ namespace DriverCatapult
         private void button6_Click(object sender, EventArgs e)
         {
             this.comboBox1.Items.Clear();
+            this.comboBox1.Text = "";
             Properties.Settings.Default.restorePoints.Clear();
             Properties.Settings.Default.Save();
+        }
+
+        private void Form5_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

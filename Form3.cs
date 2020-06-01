@@ -109,5 +109,10 @@ namespace DriverCatapult
             f5.Size = this.Size;
             this.Close();
         }
+
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

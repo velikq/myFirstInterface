@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
@@ -38,8 +39,13 @@ namespace DriverCatapult
             Console.WriteLine("успех");
             if(Properties.Settings.Default.createRestorePoint == true)
             {
-                string[] mystr = { DateTime.Now.ToString() };
-                Properties.Settings.Default.restorePoints.AddRange(mystr);
+                StringCollection sc = new StringCollection();
+                if(Properties.Settings.Default.restorePoints != null)
+                {
+                    sc = Properties.Settings.Default.restorePoints;
+                }
+                sc.Add(DateTime.Now.ToString());
+                Properties.Settings.Default.restorePoints = sc;
                 Properties.Settings.Default.Save();
             }
 
@@ -92,6 +98,11 @@ namespace DriverCatapult
             f5.Top = this.Top;
             f5.Size = this.Size;
             this.Close();
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

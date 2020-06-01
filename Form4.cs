@@ -43,5 +43,10 @@ namespace DriverCatapult
             Properties.Settings.Default.createRestorePoint = checkBox1.Checked;
             Properties.Settings.Default.Save();
         }
+
+        private void Form4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

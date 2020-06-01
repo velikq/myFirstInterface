@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DriverCatapult.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="yes" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
     <Setting Name="scanDate" Type="System.String" Scope="User">
       <Value Profile="(Default)">никогда</Value>
     </Setting>

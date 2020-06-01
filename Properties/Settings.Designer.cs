@@ -25,18 +25,6 @@ namespace DriverCatapult.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool yes {
-            get {
-                return ((bool)(this["yes"]));
-            }
-            set {
-                this["yes"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("никогда")]
         public string scanDate {
             get {

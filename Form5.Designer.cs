@@ -148,6 +148,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

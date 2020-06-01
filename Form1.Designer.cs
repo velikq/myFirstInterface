@@ -96,9 +96,8 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(368, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 5;
-            this.label2.Text = "никогда";
             // 
             // button4
             // 
